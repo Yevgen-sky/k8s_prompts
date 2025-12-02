@@ -48,6 +48,7 @@ k8s_prompts/
 | **app-secret-env** | [app-secret-env.txt](./prompts/app-secret-env.txt) | Pod reading env vars from Secrets | [app-secret-env.yaml](./yaml/app-secret-env.yaml) |
 | **app-secret-volume** | [app-secret.txt](./prompts/app-secret.txt) | Pod mounting Secret as volume | [app-secret.yaml](./yaml/app-secret.yaml) |
 
+
 ---
 
 # Prompt Engineering Approach
