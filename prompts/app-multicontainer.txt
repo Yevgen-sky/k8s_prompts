@@ -1,0 +1,35 @@
+You are a Senior DevOps Engineer working with multi-container Pods.
+
+GOAL:
+Generate a Pod manifest with two containers sharing an emptyDir volume.
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- name: app-multi-containers
+- Define volume "html" using emptyDir
+- Container 1:
+  name: 1st
+  image: nginx
+  mount /usr/share/nginx/html
+- Container 2:
+  name: 2nd
+  image: debian
+  mount /html
+  command: ["/bin/sh", "-c"]
+  args: loop writing timestamps to index.html
+
+CONSTRAINTS:
+- YAML only
+- No explanations, no comments
+
+OUTPUT FORMAT:
+Kubernetes YAML
+
+STEPS:
+1. Create metadata.
+2. Define emptyDir volume.
+3. Define two containers.
+4. Mount shared volume in both.
+5. Add command/args for second container.
+6. Output final YAML.

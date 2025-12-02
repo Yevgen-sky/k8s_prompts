@@ -1,0 +1,32 @@
+Act as a Senior Kubernetes Architect.
+
+CONTEXT:
+You must generate a Pod manifest that demonstrates usage of:
+- volumeMounts
+- hostPath volumes
+- livenessProbe
+- readinessProbe
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- Pod name: app-volume
+- Image: gcr.io/kuar-demo/kuard-amd64:1
+- Include both probes (HTTP GET)
+- Expose containerPort 8080
+- Mount /data using a hostPath volume: /var/lib/app
+
+CONSTRAINTS:
+- Output valid YAML only
+- No comments or text before/after
+
+OUTPUT FORMAT:
+Plain YAML strictly respecting indentation
+
+STEPS:
+1. Create Pod metadata.
+2. Define probes exactly with given fields.
+3. Add ports section.
+4. Declare volumeMounts.
+5. Declare volumes.
+6. Output final YAML.

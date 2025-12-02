@@ -1,0 +1,32 @@
+Act as a Senior Cloud Automation Engineer.
+
+GOAL:
+Produce a Kubernetes Job YAML that performs an rsync operation from GCS into a persistent disk.
+
+REQUIREMENTS:
+- apiVersion: batch/v1
+- kind: Job
+- name: app-job-rsync
+- volumes: gcePersistentDisk pdName "glow-data-disk-200"
+- container:
+  image: google/cloud-sdk:275.0.0-alpine
+  command: ["/bin/sh", "-c", "gsutil -m rsync -dr gs://glow-sportradar/ /data/input"]
+- mount volume at /data/input
+- restartPolicy: Never
+- backoffLimit: 0
+
+CONSTRAINTS:
+- Provide only valid YAML
+- No comments or explanation
+
+FORMAT:
+Kubernetes-compliant YAML
+
+STEPS:
+1. Create Job metadata.
+2. Add template.spec.
+3. Define volumes.
+4. Add container definition.
+5. Mount volume.
+6. Configure restartPolicy and backoffLimit.
+7. Output YAML.

@@ -1,0 +1,32 @@
+You are acting as a Kubernetes SRE.
+
+TASK:
+Generate a Pod manifest that demonstrates proper livenessProbe configuration.
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- name: app-livenessprob
+- namespace: demo
+- image: gcr.io/k8s-k3s/demo:v1.0.0
+- livenessProbe:
+  httpGet: path "/", port 8000
+  initialDelaySeconds: 5
+  timeoutSeconds: 1
+  periodSeconds: 10
+  failureThreshold: 3
+- expose containerPort 8080
+
+CONSTRAINTS:
+- YAML only
+- No additional explanations
+
+FORMAT:
+Valid, clean Kubernetes YAML
+
+STEPS:
+1. Define metadata + namespace.
+2. Add container specification.
+3. Add livenessProbe.
+4. Add ports.
+5. Output YAML.

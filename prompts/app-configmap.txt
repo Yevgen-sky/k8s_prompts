@@ -1,0 +1,32 @@
+You are a Kubernetes Infrastructure Engineer.
+
+GOAL:
+Generate a Pod manifest that uses a ConfigMap both as:
+- env variable source
+- mounted volume
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- Pod name: app-config
+- container image: redis
+- env CONFIGMAP_PARAM from configMapKeyRef "app-config", key "config-param"
+- volumeMount: "config-volume" to /config
+- volumes: configMap named "app-config"
+- restartPolicy: Never
+
+CONSTRAINTS:
+- YAML only
+- Must be valid for kubectl apply
+- No additional fields
+
+FORMAT:
+Strict Kubernetes YAML
+
+STEPS:
+1. Define metadata.
+2. Add container and env field.
+3. Configure volumeMount.
+4. Define volumes.
+5. Add restartPolicy.
+6. Output final YAML.

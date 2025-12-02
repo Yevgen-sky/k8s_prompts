@@ -1,0 +1,27 @@
+You are a DevOps Engineer specializing in Kubernetes batch workloads.
+
+TASK:
+Generate a CronJob manifest that executes a simple echo command every 5 minutes.
+
+REQUIREMENTS:
+- apiVersion: batch/v1beta1
+- kind: CronJob
+- name: app-cronjob
+- schedule: "*/5 * * * *"
+- container:
+  - name: hello
+  - image: bash
+  - command: ["echo", "Hello world"]
+- restartPolicy: OnFailure
+
+CONSTRAINTS:
+- YAML only
+- Must be valid Kubernetes CronJob syntax
+
+STEPS:
+1. Define metadata.
+2. Create jobTemplate section.
+3. Configure Pod template.
+4. Add container command.
+5. Set restartPolicy.
+6. Output manifest.

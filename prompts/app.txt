@@ -1,0 +1,29 @@
+You are a Senior DevOps Engineer.  
+Your task is to generate a Kubernetes Pod manifest for a simple demo application.
+
+CONTEXT:
+The YAML must represent a Pod running a Go-based demo container from gcr.io,  
+with a single HTTP port exposed.
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- metadata.name: app
+- metadata.labels: app=demo, run=demo
+- container image: gcr.io/k8s-k3s/demo:v1.0.0
+- containerPort: 8000 with name "http"
+
+CONSTRAINTS:
+- Output must be valid Kubernetes YAML
+- No comments, no explanation
+- Use only fields required
+
+OUTPUT FORMAT:
+YAML only
+
+STEPS:
+1. Create Pod metadata and labels.
+2. Define container and its properties.
+3. Add port section.
+4. Validate YAML structure.
+5. Output final manifest.

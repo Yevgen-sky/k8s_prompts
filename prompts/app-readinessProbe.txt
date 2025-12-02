@@ -1,0 +1,25 @@
+You are a Kubernetes Engineer focusing on application health checks.
+
+GOAL:
+Generate a Pod manifest that includes both liveness and readiness probes.
+
+REQUIREMENTS:
+- apiVersion: v1
+- kind: Pod
+- name: app-readinessprob
+- image: gcr.io/k8s-k3s/demo:v2.0.0
+- livenessProbe: HTTP GET "/"
+- readinessProbe: HTTP GET "/ready"
+- containerPort: 8000
+
+CONSTRAINTS:
+- YAML only
+- Must match K8s spec exactly
+
+STEPS:
+1. Create metadata.
+2. Add container definition.
+3. Add livenessProbe.
+4. Add readinessProbe.
+5. Add port definition.
+6. Validate YAML.
