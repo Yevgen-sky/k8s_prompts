@@ -36,18 +36,17 @@ k8s_prompts/
 
 | NAME | PROMPT | DESCRIPTION | EXAMPLE |
 |------|--------|-------------|----------|
-| **app** | [app.txt](./prompts/app.txt) | Basic Pod manifest with container & port | [app.yaml](./yaml/app.yaml) |
-| **app-volumeMounts** | [app-volumeMounts.txt](./prompts/app-volumeMounts.txt) | Pod with hostPath volume + probes | [app-volumeMounts.yaml](./yaml/app-volumeMounts.yaml) |
-| **app-configmap** | [app-configmap.txt](./prompts/app-configmap.txt) | Pod consuming ConfigMap via env & volume | [app-configmap.yaml](./yaml/app-configmap.yaml) |
-| **app-cronjob** | [app-cronjob.txt](./prompts/app-cronjob.txt) | CronJob running a scheduled command | [app-cronjob.yaml](./yaml/app-cronjob.yaml) |
-| **app-job** | [app-job.txt](./prompts/app-job.txt) | Job with persistent disk + GCS rsync task | [app-job.yaml](./yaml/app-job.yaml) |
-| **app-livenessProbe** | [app-livenessProbe.txt](./prompts/app-livenessProbe.txt) | Pod with liveness probe | [app-livenessProbe.yaml](./yaml/app-livenessProbe.yaml) |
-| **app-multicontainer** | [app-multicontainer.txt](./prompts/app-multicontainer.txt) | Multi-container Pod sharing emptyDir | [app-multicontainer.yaml](./yaml/app-multicontainer.yaml) |
-| **app-readinessProbe** | [app-readinessProbe.txt](./prompts/app-readinessProbe.txt) | Pod with readiness + liveness probes | [app-readinessProbe.yaml](./yaml/app-readinessProbe.yaml) |
-| **app-resources** | [app-resources.txt](./prompts/app-resources.txt) | Pod with resource limits/requests | [app-resources.yaml](./yaml/app-resources.yaml) |
-| **app-secret-env** | [app-secret-env.txt](./prompts/app-secret-env.txt) | Pod reading env vars from Secrets | [app-secret-env.yaml](./yaml/app-secret-env.yaml) |
-| **app-secret-volume** | [app-secret.txt](./prompts/app-secret.txt) | Pod mounting Secret as volume | [app-secret.yaml](./yaml/app-secret.yaml) |
-
+| **app** | [app.txt](./k8s_prompts/prompts/app.txt) | Basic Pod manifest with container & port | [app.yaml](./k8s_prompts/yaml/app.yaml) |
+| **app-volumeMounts** | [app-volumeMounts.txt](./k8s_prompts/prompts/app-volumeMounts.txt) | Pod with hostPath volume + probes | [app-volumeMounts.yaml](./k8s_prompts/yaml/app-volumeMounts.yaml) |
+| **app-configmap** | [app-configmap.txt](./k8s_prompts/prompts/app-configmap.txt) | Pod consuming ConfigMap via env & volume | [app-configmap.yaml](./k8s_prompts/yaml/app-configmap.yaml) |
+| **app-cronjob** | [app-cronjob.txt](./k8s_prompts/prompts/app-cronjob.txt) | CronJob running a scheduled command | [app-cronjob.yaml](./k8s_prompts/yaml/app-cronjob.yaml) |
+| **app-job** | [app-job.txt](./k8s_prompts/prompts/app-job.txt) | Job with persistent disk + GCS rsync task | [app-job.yaml](./k8s_prompts/yaml/app-job.yaml) |
+| **app-livenessProbe** | [app-livenessProbe.txt](./k8s_prompts/prompts/app-livenessProbe.txt) | Pod with liveness probe | [app-livenessProbe.yaml](./k8s_prompts/yaml/app-livenessProbe.yaml) |
+| **app-multicontainer** | [app-multicontainer.txt](./k8s_prompts/prompts/app-multicontainer.txt) | Multi-container Pod sharing emptyDir | [app-multicontainer.yaml](./k8s_prompts/yaml/app-multicontainer.yaml) |
+| **app-readinessProbe** | [app-readinessProbe.txt](./k8s_prompts/prompts/app-readinessProbe.txt) | Pod with readiness + liveness probes | [app-readinessProbe.yaml](./k8s_prompts/yaml/app-readinessProbe.yaml) |
+| **app-resources** | [app-resources.txt](./k8s_prompts/prompts/app-resources.txt) | Pod with resource limits/requests | [app-resources.yaml](./k8s_prompts/yaml/app-resources.yaml) |
+| **app-secret-env** | [app-secret-env.txt](./k8s_prompts/prompts/app-secret-env.txt) | Pod reading env vars from Secrets | [app-secret-env.yaml](./k8s_prompts/yaml/app-secret-env.yaml) |
+| **app-secret-volume** | [app-secret.txt](./k8s_prompts/prompts/app-secret.txt) | Pod mounting Secret as volume | [app-secret.yaml](./k8s_prompts/yaml/app-secret.yaml) |
 
 ---
 
